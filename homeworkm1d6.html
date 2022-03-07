@@ -1,0 +1,124 @@
+ou have been assigned to the creation of a Smartphone Shop Website. The homepage you're about to write is just a showcase of the products of the shop with some extra information. No shopping cart / checkout features are required.
+ 
+Complete exercises from 1 to 6 with just plain HTML:
+ 
+EX1: Add an h1 tag with the name of your shop
+EX2: Add a TABLE with the top 5 products of your shop
+EX3: Insert for each product an image, a title, a description and a price
+EX4: Add links to existing Amazon products for each item in the table
+EX5: Add a footer with the address and the name of your shop
+EX6: Add a message board where the user can type a message in it (no real posting/saving features required!)
+ 
+…from 7 to 12, should be written in JavaScript:
+ 
+EX7: Write a function to change the h1 text to something else
+EX8: Write a function to change the page background color
+EX9: Write a function to change the footer address with a fake one
+EX10: Write a function to add a CSS class to every Amazon link
+EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+EX12: Write a function to color the price of the products in a different one every time it's invoked */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Shop</title>
+</head>
+<body>
+    <h1>Goood Smartphones</h1>
+    
+    <table>
+        <tr>
+            <td><img src="https://m.media-amazon.com/images/I/81nld4NtAkL._AC_UY218_.jpg" alt="picture of iphone se2020" width="75%"></td>
+            <td><h3>iphone SE2020</h3></td>
+            <td><p>A great iphone, starting with the price.</p></td>
+            <td><em>475€</em></td>
+            <td><a href="https://www.amazon.de/Apple-iPhone-SE-64-GB-Schwarz/dp/B08L6YJCK4/ref=sr_1_1_sspa?crid=2U1SU21H8OGEN&keywords=iphone+se+2020&qid=1646660043&sprefix=iPhone+se+20%2Caps%2C99&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFITDdFQThRT1hNNDYmZW5jcnlwdGVkSWQ9QTAxNjc2MTIxU1FFR1lLVzJLTDg3JmVuY3J5cHRlZEFkSWQ9QTAzMTgxNTAyMlFJMjI5NFRUWkU0JndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Buy me</a></td>
+        </tr>
+        <tr>
+            <td><img src="" alt=""></td>
+            <td><h3></h3></td>
+            <td><p></p></td>
+            <td><em></em></td>
+            <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><img src="" alt=""></td>
+            <td><h3></h3></td>
+            <td><p></p></td>
+            <td><em></em></td>
+            <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><img src="" alt=""></td>
+            <td><h3></h3></td>
+            <td><p></p></td>
+            <td><em></em></td>
+            <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><img src="" alt=""></td>
+            <td><h3></h3></td>
+            <td><p></p></td>
+            <td><em></em></td>
+            <td><a href=""></a></td>
+        </tr>
+    </table>
+    <hr>
+    <div>
+<form action="mailto:info@gooodSmartphones.de" method="post" enctype="text/plain">
+    <label>Your Name</label>
+    <input type="text">
+    <br>
+    <label>Your Email</label>
+    <input type="email">
+    <br>
+    <label>Your Message</label>">
+    <textarea name="name" id="" cols="10" rows="30"></textarea>
+    <br>
+    <input type="submit" name="" id="">
+</form>   
+ </div>
+
+   <footer>
+       <div>
+           Name of the shop
+       </div>
+       <div id="address">
+           address of the shop
+       </div>
+   </footer>
+
+
+   <script>
+       function nameOfTheFunction(){
+           let h1 = document.getElementsByTagName("h1") [0]
+           h1.innerText = "Gooodest Smartphones"
+       }
+       nameOfTheFunction()
+       
+       function changeOfTheBackgroundColor(){
+           let backgroundColor = document.querySelector("#background-color")
+           backgroundColor.style.color = "grey"
+
+       }
+       changeOfTheBackgroundColor()
+
+       function changeTheFooterAddresses(){
+           let footerAddress = document.getElementById("address")
+           footerAddress.innerText = "fake address"
+
+        }
+        changeTheFooterAddresses()
+
+        function addClassToTagByTag(tag, classParameter){
+            let classTag = document.getElementsByTagName("a")[0, 1, 2, 3, 4]
+            classTag.classList.add(classParameter)
+        }
+        addClassToTagByTag()
+
+   </script>
+</body>
+</html> 
